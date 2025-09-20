@@ -16,21 +16,9 @@ function App() {
     setItems(data)
   };
 
-  const getTributeData = async () => {
-    const response = await fetch('https://tribute.tg/api/v1/subscriptions', {
-      method: 'GET',
-      headers: {
-        "Api-Key": "f9c9d6cc-73d4-49d5-b472-a46c9381",
-        "Accept": "*/*"
-      },
-    });
-    const data = await response.json();
-    console.log(data)
-  }
 
   useEffect(() => {
     testGetRequest()
-    getTributeData()
   }, [])
 
   return (
