@@ -11,7 +11,7 @@ export default defineConfig({
     // hmr: { protocol: 'wss', host: ' https://21f6332cb4af.ngrok-free.app/', clientPort: 443 },
     // allowedHosts: ['c5b6789aa5dc.ngrok-free.app'],
     proxy: {
-      '/api': 'http://localhost:3000', // проксируем всё, что начинается с /api\\
+      '/api': 'http://91.200.84.185/', // проксируем всё, что начинается с /api\\
     },
   },
 })
