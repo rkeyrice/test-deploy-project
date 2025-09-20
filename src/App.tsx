@@ -24,6 +24,7 @@ function App() {
   return (
     <>
       <div>
+        <h1> {import.meta.env.VITE_LOL}</h1>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -42,6 +43,9 @@ function App() {
           <li>ID: {item.id}, Name: {item.name}</li>
         ))}
       </ul>
+      <div>
+
+      </div>
     </>
   )
 }
