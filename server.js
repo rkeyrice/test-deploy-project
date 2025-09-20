@@ -1,5 +1,10 @@
 import express from 'express';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
+
+
 const app = express();
 
 app.use(express.json());
@@ -17,6 +22,8 @@ app.get('/api/test', async (_, res) => {
 });
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
+
+console.log(process.env.TEST_SERVER_ENV)
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
